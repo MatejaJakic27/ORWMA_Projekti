@@ -1,0 +1,278 @@
+body{
+    margin:0;
+ }
+ 
+ .container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 40px 1fr 245px;
+    gap: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+            
+ }
+ 
+.header{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding: 5px;
+    background-color: black;
+}
+.header_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        
+}
+
+
+.navList{
+   list-style-type: none;
+   text-align: center;
+   margin:  0;
+   padding: 0;
+   width: 100%;
+}
+ .navList li{
+   display: inline;
+ }
+
+li a{
+   display: block;
+   color: white;
+   width: 14.52em;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+}
+
+.navigation{
+   grid-column-start: 1;
+   grid-column-end: 7;
+   width: 100%;
+   background-color: #1A1A1D;
+}
+.navigation a{
+   display: inline-block;
+   padding: 10px;
+   background-color: #1A1A1D;
+}
+li a:hover{
+   background-color: rgb(8, 8, 8);
+}
+li a.active{
+   background-color: #0a0a0c;
+
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-image: url(../images/footerBG1.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+ }
+ 
+ 
+ .footerLeft p{
+       grid-column-start: 1;
+       grid-column-end: 2;
+       padding-left: 2px; 
+       padding-right: 225px;
+       padding-top: 75px;
+       font-size: 20px;
+       color:rgb(204, 196, 196);
+       text-align: center;
+ 
+ }
+ .footerMiddle{
+    grid-column-start: 2;
+    grid-column-end: 3;
+ }
+ .footerMiddle h2{
+    padding-top: 15px;
+ }
+ .footerMiddle p{
+    font-size: 18px;
+    color: rgb(204, 196, 196);
+    text-align: center;
+ }
+ .email-input{
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(204, 196, 196);
+ }
+ #mail{
+    padding: 6px;
+    width: 12.5em;
+    font-size: 16px;
+    border-radius: 4px;
+    padding-left:40px;
+ }
+ .email-input i{
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    padding-left: 3px;
+    padding-top: 2px;
+    color: rgb(204, 196, 196);
+ 
+ }
+ .submitEmail{
+    margin-top: 10px;
+    padding: 5px 25px;
+ }
+ 
+ 
+ .footerMiddle h2{
+    color: rgb(204, 196, 196);
+    text-align: center;
+ }
+ 
+ .footerRight p{
+    grid-column : 3/4;
+    font-size: 16px;
+    color:#b50068;
+    text-align: center;
+    padding-top: 200px;
+    padding-right: 20px;
+    float: right;
+    font-style: italic;
+    
+ }
+.h2-aside{
+    text-align: center;
+    color: rgb(204, 196, 196);
+    font-size: 30px;
+    background-color: #131314;
+ }
+ .mainTrenutno{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+    
+    display: grid;
+    grid-template-columns: 475px 1fr 1fr 35px;
+    grid-template-rows: 50px 1fr 1fr 50px;
+    gap: 15px;
+    
+    background-image: url(../images/CurrReadingOverlay3.jpg);
+    background-color: #1A1A1D;
+    background-size: 150%;
+    animation: bg-animation 50s infinite alternate; 
+   
+  /* linear-gradient(45deg, #2b2b2b,#252525,  #1d1d1d,#1a1919, #161616)   */
+    
+ }
+ @keyframes bg-animation{
+    0% {background-position: left}
+    100% {background-position: right}
+ }
+ .currReading1{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    border:  solid black 2px;
+    border-radius: 10px;
+    transition: 1s;
+ }
+ .currReading2{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    height: 100%;
+    width: 100%;
+    border:  solid black 2px;
+    border-radius: 10px;
+    transition: 1s;
+ }
+ .currReading3{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    border:  solid black 2px;
+    border-radius: 10px;
+    transition: 1s;
+ }
+ .currReading4{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    height: 100%;
+    width: 100%;
+    border:  solid black 2px;
+    border-radius: 10px;
+    transition: 1s;
+ }
+ .mainTrenutnoTekst{
+    grid-row: 2/4;
+    grid-column: 1/2;
+ }
+ .mainTrenutnoTekst h1{
+    text-align: center;
+    margin-left: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .mainTrenutnoTekst h4{
+    text-align: center;
+    margin-left: 16px;
+    color: rgb(204, 196, 196);
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .trenutnaLista{
+    list-style-type: circle;
+    
+ }
+ .trenutnaLista li{
+    color: rgb(204, 196, 196);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+ 
+ }
+ .trenutnaListaOpis{
+    font-size: 16px;
+    text-align: justify;
+    padding-right: 20px;
+  
+ }
+ .currReading1:hover, .currReading2:hover, .currReading3:hover, .currReading4:hover{
+    transform: scale(1.05);
+ }
+ .p-asideTren{
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    color: rgb(204, 196, 196);
+    padding-top: 5%;
+    margin-left: 30px;
+    margin-right: 40px;
+ }
+ .mojaslikaTren{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 50%;
+   border: 10px solid #1A1A1D;
+ }
+ .asideTren{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: #1A1A1D;
+    background-image: url(../images/magenta_texture.jpg);
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    background-position: 100% 18%;
+ 
+ }
+ 

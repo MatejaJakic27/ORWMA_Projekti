@@ -1,0 +1,280 @@
+body{
+    margin:0;
+ }
+ 
+ .container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 40px 1fr 245px;
+    gap: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+            
+ }
+ 
+.header{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding: 5px;
+    background-color: black;
+}
+.header_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        
+}
+
+
+.navList{
+   list-style-type: none;
+   text-align: center;
+   margin:  0;
+   padding: 0;
+   width: 100%;
+}
+ .navList li{
+   display: inline;
+ }
+
+li a{
+   display: block;
+   color: white;
+   width: 14.52em;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+}
+
+.navigation{
+   grid-column-start: 1;
+   grid-column-end: 7;
+   width: 100%;
+   background-color: #1A1A1D;
+}
+.navigation a{
+   display: inline-block;
+   padding: 10px;
+   background-color: #1A1A1D;
+}
+li a:hover{
+   background-color: rgb(8, 8, 8);
+}
+li a.active{
+   background-color: #0a0a0c;
+
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-image: url(../images/footerBG1.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+ }
+ 
+ 
+ .footerLeft p{
+       grid-column-start: 1;
+       grid-column-end: 2;
+       padding-left: 2px; 
+       padding-right: 225px;
+       padding-top: 75px;
+       font-size: 20px;
+       color:rgb(204, 196, 196);
+       text-align: center;
+ 
+ }
+ .footerMiddle{
+    grid-column-start: 2;
+    grid-column-end: 3;
+ }
+ .footerMiddle h2{
+    padding-top: 15px;
+ }
+ .footerMiddle p{
+    font-size: 18px;
+    color: rgb(204, 196, 196);
+    text-align: center;
+ }
+ .email-input{
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(204, 196, 196);
+ }
+ #mail{
+    padding: 6px;
+    width: 12.5em;
+    font-size: 16px;
+    border-radius: 4px;
+    padding-left:40px;
+ }
+ .email-input i{
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    padding-left: 3px;
+    padding-top: 2px;
+    color: rgb(204, 196, 196);
+ 
+ }
+ .submitEmail{
+    margin-top: 10px;
+    padding: 5px 25px;
+ }
+ 
+ 
+ .footerMiddle h2{
+    color: rgb(204, 196, 196);
+    text-align: center;
+ }
+ 
+ .footerRight p{
+    grid-column : 3/4;
+    font-size: 16px;
+    color:#b50068;
+    text-align: center;
+    padding-top: 200px;
+    padding-right: 20px;
+    float: right;
+    font-style: italic;
+    
+ }
+
+.mainKreda{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-image:  linear-gradient(45deg, #363636, #1a1919, #0f0f0f);
+    display: grid;
+    grid-template-rows: 5px 65px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+ }
+ .KredaTitle{
+    grid-column: 1/8;
+    grid-row: 2/3;
+    text-align: center;
+    color:rgb(255, 68, 162);
+    background-color: #0b0b0c;
+    padding-bottom: 10px;
+ }
+ .KredaPic1{
+    grid-column: 1/4;
+    grid-row: 3/5;
+    padding-left: 20px;
+ }
+ .KredaPic1 img{
+    width: 100%;
+    height: 100%;
+ }
+ .KredaPic2{
+    grid-column: 2/5;
+    grid-row: 4/6;
+ }
+ .KredaPic2 img{
+    width: 100%;
+    height: 100%;
+ }
+ .KredaPicBG1{
+    grid-column: 4/5;
+    grid-row: 3/4;
+   
+    background-color: #a01f39;
+ }
+ .KredaPicBG2{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin-left: 20px;
+   background-color: #a01f39;
+ }
+ .KredaText1{
+    grid-row: 3/6;
+    grid-column: 5/8;
+    font-size: 18px;
+    color:rgb(204, 196, 196);
+    text-align: justify;
+    padding-right: 25px;
+    padding-left: 5px;
+    line-height: 1.5;
+    margin-top: 0;
+ }
+ .KredaText2{
+    grid-row: 6/8;
+    grid-column: 1/8;
+    font-size: 18px;
+    color:rgb(204, 196, 196);
+    text-align: justify;
+    padding-right: 25px;
+    padding-left: 5px;
+    line-height: 1.5;
+    margin-top: 0;
+ }
+
+ .h2-aside{
+    text-align: center;
+    color: rgb(204, 196, 196);
+    font-size: 30px;
+    background-color: #131314;
+ }
+ 
+ .asideKreda{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: #1A1A1D;
+    background-image: url(../images/magenta_texture.jpg);
+    background-size: 100% 29%;
+    background-repeat: no-repeat;
+    background-position: 100% 13%;
+ 
+ }
+ .p-asideKreda{
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    color: rgb(204, 196, 196);
+    padding-top: 10%;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding-bottom: 30px;
+ }
+ .mojaslikaKreda{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 50%;
+   border: 10px solid #1A1A1D;
+ }
+ .asideEmail h3{
+    padding-top: 30px;
+    color: rgb(204, 196, 196);
+    text-align: center;
+    font-size: 22px;
+ }
+ .asideEmail h4{
+    padding-top: 5px;
+    color: rgb(204, 196, 196);
+    text-align: center;
+    font-size: 20px;
+ }
+ .asideEmail{
+    width: 100%;
+    height: 15%;
+    background-color:#131314;
+ }
+ .mailToLink{
+   text-decoration: none;
+   color: rgb(204, 196, 196);
+}
+
+.mailToLink:hover{
+   color: rgb(255, 68, 162);
+}
