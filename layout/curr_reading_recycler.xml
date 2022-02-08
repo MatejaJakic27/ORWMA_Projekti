@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:paddingBottom="6dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/sapphire"
+        app:cardCornerRadius="10dp"
+
+        app:cardElevation="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/bookDisplay1"
+            android:layout_width="107dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/spletkarica" />
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:text="TextView"
+            android:textColor="@color/palePink"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="70dp"
+            android:text="TextView"
+            android:textColor="@color/palePink"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/bookDisplay1"
+            app:layout_constraintTop_toBottomOf="@+id/bookTitle" />
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="100dp"
+            android:text="TextView"
+            android:textColor="@color/palePink"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/bookDisplay1"
+            app:layout_constraintTop_toBottomOf="@+id/bookAuthor" />
+
+        <Button
+            android:id="@+id/endButton"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/lightCoral"
+            android:onClick="removeItem"
+            android:text="@string/endB"
+            android:textColor="@color/palePink"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/bookDisplay1"
+            app:layout_constraintTop_toBottomOf="@+id/quotationButton" />
+
+        <RatingBar
+            android:id="@+id/currRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="130dp"
+            android:isIndicator="false"
+            android:progressTint="@color/palePink"
+            android:stepSize="1" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
